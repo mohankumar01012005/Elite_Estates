@@ -6,12 +6,14 @@ import About from './Pages/About'
 import SignIn from './Pages/SignIn'
 
 import SignUp from './Pages/SignUp'
+import Header from './Components/Header'
 
 function App() {
   return (
     <div >
 
     <BrowserRouter>
+    <Header></Header>
 
       <Routes>
         <Route path='/' element={<App></App>}></Route>
