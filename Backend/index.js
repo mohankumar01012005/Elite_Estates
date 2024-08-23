@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose";
 
 import dotenv from "dotenv"
+import userRouter from "./Routes/user.route.js"
 
 dotenv.config();
 
@@ -24,3 +25,5 @@ app.listen(3000 ,()=>{
   
 })
  
+
+app.use("/Backend/user",userRouter)
